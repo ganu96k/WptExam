@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interest Calculator</h1>
+            <marquee behavior="scroll" direction="left">Welcome to the Interest Calculator! Hover over the buttons for a surprise effect.</marquee>
+        </header>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="principal">Principal (P):</label>
+                <input type="number" id="principal">
+            </div>
+            <div class="input-group">
+                <label for="rate">Rate of Interest (R):</label>
+                <input type="number" id="rate">
+            </div>
+            <div class="input-group">
+                <label for="time">Time (T in years):</label>
+                <input type="number" id="time">
+            </div>
+            <div class="input-group">
+                <label for="compound">Number of Times Interest Compounded per Year (N):</label>
+                <input type="number" id="compound">
+            </div>
+            <div class="buttons">
+                <button id="calculateSI" class="btn">Calculate Simple Interest</button>
+                <button id="calculateCI" class="btn">Calculate Compound Interest</button>
+            </div>
+            <div class="output">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
