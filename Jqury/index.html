@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Hover Event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #myElement {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#myElement").hover(
+                function() {
+                    $(this).css("background-color", "red");
+                },
+                function() {
+                    $(this).css("background-color", "blue");
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+    <div id="myElement"></div>
+</body>
+</html>

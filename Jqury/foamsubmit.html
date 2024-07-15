@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Form Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myForm").submit(function(event) {
+                event.preventDefault();
+                alert("Form submitted!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Change Event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").change(function() {
+                alert("Input changed to: " + $(this).val());
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Type something">
+</body>
+</html>
