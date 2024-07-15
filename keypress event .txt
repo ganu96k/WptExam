@@ -1,0 +1,42 @@
+keypress event 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Keypress Event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").keypress(function(event) {
+                alert("Key pressed: " + String.fromCharCode(event.which));
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Press any key">
+</body>
+</html>
+
+basic event 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myButton").click(function() {
+                alert("Button clicked!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="myButton">Click Me</button>
+</body>
+</html>

@@ -1,0 +1,84 @@
+npx create-react-app my-react-app
+cd my-react-app
+Install Node.js and npm:
+Make sure you have Node.js and npm installed on your machine. You can download and install it from Node.js official website.
+
+cd my-react-app
+
+
+
+
+Create a New React Project:
+Open your terminal or command prompt and run the following command to create a new React project using create-react-app:
+
+bash
+Copy code
+npx create-react-app my-react-app
+
+
+header.js
+
+import React from 'react';
+
+function Header() {
+  return (
+    <header>
+      <h1>Welcome to My React App</h1>
+    </header>
+  );
+}
+
+export default Header;
+
+maincontent.js
+
+
+import React from 'react';
+
+function MainContent() {
+  return (
+    <main>
+      <p>This is the main content of the app.</p>
+    </main>
+  );
+}
+
+export default MainContent;
+
+
+footer.js 
+
+import React from 'react';
+
+function Footer() {
+  return (
+    <footer>
+      <p>&copy; 2024 My React App. All rights reserved.</p>
+    </footer>
+  );
+}
+
+export default Footer;
+
+
+app.js use above all
+
+import React from 'react';
+import './App.css';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+
